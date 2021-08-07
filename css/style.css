@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+/* CSS Variables */
+
+:root {
+    /* --main-bg-color: #333; */
+    --main-bg-color: #2874f0;
+}
+
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+
+header {
+    background-color: var(--main-bg-color);
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+/* navigation bar */
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 92px;
+    padding: 0 25px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 56px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0rem 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 40vw;
+    height: 36px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 0 14px;
+    margin-left: 40px;
+    margin-right: 10px;
+}
+
+.search i {
+    overflow: hidden;
+    color: white;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.search i:hover {
+    transform: scale(1.2);
+}
+
+.container {
+    min-height: calc(100vh - 56px - 12vh);
+}
+
+.container .slider {
+    width: 70vw;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.container .slider img {
+    border-radius: 20px;
+}
+
+.container .card {
+    max-width: 90vw;
+    margin: 100px auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container .card h2 {
+    font-family: 'Lato', sans-serif;
+}
+
+.container .cards {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container .cards .card-item {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10vw;
+    margin: 0 34px;
+}
+
+.container .cards .card-item img {
+    margin: 1rem 0;
+    border-radius: 10px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.container .cards .card-item img:hover {
+    transform: scale(1.15);
+}
+
+/* footer */
+
+footer {
+    background-color: var(--main-bg-color);
+    color: white;
+    height: 12vh;
+    font-family: 'Lato', sans-serif;
+    font-size: 20 px;
+}
